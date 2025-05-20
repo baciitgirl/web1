@@ -103,11 +103,19 @@ Format Dokument: Strg Shift P
 GitHub: deploy  in Settings: Pages -> main -> save dann richtig Adresse eingeben
 https://baciitgirl.github.io/web1/ die richtige Adresse
 
+inline: text nimmt alle seite, erzeugen keine Zeilenumbruch SPAN 1 SPAN 2- ohne Umbruch einfach hintereinandern
+ 
+block: nach dem Inhalt falls nur div /div - 0 px nimmt. Die aber erteugen Zeilenumbruch div 1 /div
+											div 2  /div
+
+Verschahteln: in blok darf man inline verschachteln umgekehrt VErboten
 
 
 
+<div> Unterschied mit <buton> : button ist semanztisch, sonst kann man auch div als button gestallten
 
 
+mit pre in blockquote kann man " " so schreiben ohne &amp (also ohne spezielle Kodierung)
 
 
 
