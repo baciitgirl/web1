@@ -1,0 +1,132 @@
+HTML: strukturiert den Text, sonst wird wie plain text unübersichtlich
+
+xml nicht semantisch, Server to Server Kommunikation, zeigt aber keine Internet Seite. Browser Rendering aber gibts-
+
+XAML: 
+  in HTML jeder Tag hat auch bestimmte Bedeutung, nach der wird dann die Seite angezeigt
+
+Das Plain-Text-Format (auf Deutsch: Nur-Text-Format) bezeichnet eine Art der Datenspeicherung, bei der ausschließlich Textzeichen ohne Formatierungen verwendet werden. Das bedeutet:
+
+Keine Schriftarten, Farben, Größen, Fettdruck, Kursivschrift usw.
+
+Keine eingebetteten Bilder, Tabellen oder Hyperlinks
+
+Nur reiner Text, bestehend aus Buchstaben, Zahlen, Satzzeichen und Steuerzeichen wie Zeilenumbrüchen oder Tabs
+
+Typische Merkmale:
+Dateiendung oft .txt
+
+Wird mit einfachen Texteditoren wie Notepad (Windows), TextEdit (Mac, im Nur-Text-Modus) oder Vim/Nano (Linux) geöffnet
+
+Enthält ASCII- oder Unicode-Zeichen
+
+📝 Plain Text (.txt)
+= Nur Text, keine Formatierung
+
+Keine Schriftarten, Farben, Fett/Kursiv/Unterstrichen
+
+Nur einfache Zeichen wie Buchstaben, Zahlen und Satzzeichen
+
+Kann von fast jedem Editor gelesen werden (z. B. Notepad)
+
+Sehr kompakt und kompatibel
+
+Beispiel (Inhalt einer .txt-Datei):
+
+scss
+Kopieren
+Bearbeiten
+Dies ist ein einfacher Text.
+Keine Formatierung möglich.
+📄 Rich Text Format (.rtf)
+= Text mit Formatierungsmöglichkeiten
+
+Unterstützt Formatierungen: fett, kursiv, unterstrichen, verschiedene Schriftarten und -größen, Farben, Absätze
+
+Auch Bilder und Tabellen können eingebettet werden
+
+Funktioniert auf verschiedenen Betriebssystemen
+
+Wird von WordPad, Microsoft Word u. a. unterstützt
+
+Beispiel (gleicher Text, aber formatiert in .rtf):
+
+„Dies ist ein einfacher Text.“
+
+Der Text ist z. B. fett, kursiv oder farbig
+
+
+ XML = eXtensible Markup Language
+= Allgemeines Format zur Darstellung strukturierter Daten
+
+Ist neutral – dient nur zur Datenspeicherung oder -übertragung
+
+Wird in vielen Bereichen verwendet: z. B. für Konfigurationsdateien, Datenstrukturen, Kommunikation zwischen Systemen (z. B. Webservices)
+
+Hat keine Bedeutung an sich, nur Struktur
+
+Beispiel:
+
+xml
+Kopieren
+Bearbeiten
+<person>
+  <name>Anna</name>
+  <age>30</age>
+</person>
+🖼️ XAML = eXtensible Application Markup Language
+= XML-basierte Sprache speziell für UI-Design in .NET (z. B. WPF, UWP, MAUI)
+
+Verwendet XML-Syntax, aber mit spezieller Bedeutung: definiert grafische Benutzeroberflächen
+
+Wird von Microsoft-Technologien verwendet, besonders in WPF (Windows Presentation Foundation)
+
+Kann direkt UI-Elemente erzeugen, die vom Programm ausgeführt werden
+
+
+<img> - Element Inhalte sind optional! 
+
+<> <> muss man auch schließen nachaneindern </> </>
+
+Attribute wie name, class, id - nur in start tag, nicht am Ende <p class="mycl"> 
+
+
+Praktik
+
+1. Head wird zuerst geladen vom Browser, sonst wird keine Seite überhaupt angezeigt
+
+
+Format Dokument: Strg Shift P
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
