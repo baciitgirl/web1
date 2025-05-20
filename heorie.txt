@@ -90,6 +90,8 @@ Kann direkt UI-Elemente erzeugen, die vom Programm ausgeführt werden
 
 Attribute wie name, class, id - nur in start tag, nicht am Ende <p class="mycl"> 
 
+Extentions: Live Preview Live Server Pretties
+
 
 Praktik
 
