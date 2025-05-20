@@ -122,6 +122,8 @@ https://baciitgirl.github.io/web1/
 
 Warum post ist besser: post request wird nie gecached, nur get request. 2. Attechmend Dateien auch per post und nur per post 3. größere Formulare
 
+Extention: w3c web validator
+
 
 
 
