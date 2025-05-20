@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt – Virtuelle Bibliothek</title>
+</head>
+<body>
+
+  <header>
+    <h1>Kontakt zur Virtuellen Bibliothek</h1>
+  </header>
+
+  
+ 
+<nav>
+    <li><a href="index.html">Bücher</a></li>
+      <li><a href="autoren.html">Autoren</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+</nav>
+  
+
+  <main>
+    <h2>Kontaktformular</h2>
+    <form action="https://example.com/kontakt" method="POST" enctype="multipart/form-data">
+
+      <!-- Thema -->
+      <label for="thema">Thema: *</label><br>
+      <select id="thema" name="thema" required>
+        <option value="">-- Bitte auswählen --</option>
+        <option>Allgemeine Anfrage</option>
+        <option>Feedback</option>
+        <option>Probleme melden</option>
+        <option>Buchanfrage</option>
+        <option>Marketingangelegenheiten</option>
+        <option>Partnerschaftsanfrage</option>
+        <option>Technischer Support</option>
+        <option>Datenschutzanfrage</option>
+        <option>Sonstiges</option>
+      </select><br><br>
+
+      <!-- Vorname -->
+      <label for="vorname">Vorname: *</label><br>
+      <input type="text" id="vorname" name="vorname" required><br><br>
+
+      <!-- Nachname -->
+      <label for="nachname">Nachname: *</label><br>
+      <input type="text" id="nachname" name="nachname" required><br><br>
+
+      <!-- E-Mail -->
+      <label for="email">E-Mail: *</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <!-- Nachricht -->
+      <label for="nachricht">Nachricht: *</label><br>
+      <textarea id="nachricht" name="nachricht" rows="5" required></textarea><br><br>
+
+      <!-- Datei-Upload -->
+      <!-- <label for="anhang">Dateianhang (optional):</label><br>
+      <label for="anhang">Bitte wählen Sie eine Datei zum Hochladen aus:</label><br>
+    <input type="file" id="anhang" name="anhang"><br><br> -->
+
+
+    <label for="anhang" style="display: inline-block; padding: 8px 12px; background-color: #007BFF; color: white; border-radius: 4px; cursor: pointer;">
+    Datei hochladen
+    </label>
+<input type="file" id="anhang" name="anhang" style="display: none;">
+
+<br> <br>
+
+      <!-- Marketing-Zustimmung -->
+      <label>
+        <input type="checkbox" name="marketing" value="ja">
+        Ich stimme zu, Marketinginformationen zu erhalten.
+      </label><br><br>
+
+      <!-- Absenden -->
+      <button type="submit">Senden</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Virtuelle Bibliothek. Alle Rechte vorbehalten.</p>
+    <p>Kontakt: <a href="mailto:info@virtuellebibliothek.de">info@virtuellebibliothek.de</a></p>
+  </footer>
+
+</body>
+</html>
