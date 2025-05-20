@@ -118,6 +118,9 @@ Verschahteln: in blok darf man inline verschachteln umgekehrt VErboten
 mit pre in blockquote kann man " " so schreiben ohne &amp (also ohne spezielle Kodierung)
 
 
+https://baciitgirl.github.io/web1/
+
+Warum post ist besser: post request wird nie gecached, nur get request. 2. Attechmend Dateien auch per post und nur per post 3. größere Formulare
 
 
 
