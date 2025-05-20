@@ -98,7 +98,7 @@ Praktik
 
 Format Dokument: Strg Shift P
 
-GitHub: deploy  in Settings: Pages -> main 
+GitHub: deploy  in Settings: Pages -> main -> save dann richtig Adresse eingeben
 https://baciitgirl.github.io/web1/ die richtige Adresse
 
 
