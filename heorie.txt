@@ -124,6 +124,11 @@ Warum post ist besser: post request wird nie gecached, nur get request. 2. Attec
 
 Extention: w3c web validator
 
+Thea: Grieds
+mit einem Punkt (. 25% 100 px auto) - bezeichnet man die leere Zeile
+
+gaps: Abstände zwischen Zeilen
+
 
 
 

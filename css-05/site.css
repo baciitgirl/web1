@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+body {
+    font: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em; 
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    height: 100%;
+
+}
+  
+#top {
+    background-color: green;
+    color: white;
+    padding: 0.25em;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: rgb(87, 207, 57);
+    color: white;
+    border: 3px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav {
+    /* background-color: rgb(227, 233, 233); */
+    text-decoration:none;
+}
+
+main {
+    background-color: rgb(251, 255, 251);
+      margin: 5px;
+}
+
+aside {
+    background-color: rgb(49, 191, 226);
+    margin: 5px;
+    color:white;
+    padding: 20px;
+    border:2px;
+    border-radius: 5px;
+    text-align: left;
+    
+    
+}
+
+aside h4,
+aside p {
+  text-align: left;
+}
+
+footer {
+    background-color:  #cfd4d8;
+    border: 2px solid #999; /* oder eine andere Farbe */
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav{
+      margin: 5px;
+    border:2px;
+    border-radius: 5px;
+    
+}
+
+/* nav, aside,main{
+   flex: 1 1 0;
+   
+} */
+/* 
+nav, aside{
+    width: 100px;
+} */
+
+
+nav, aside {
+    flex: 1 1 0;
+}
+
+main {
+    flex: 2 1 0;
+}
+
+
+
+
+ .menuitem{
+           list-style: none; /* entfernt die Punkte */
+            padding: 0;
+            margin: 5px;
+            display: flex; /* horizontale Anordnung */
+            gap: 10mm; /* Abstand zwischen Buttons */
+
+                    background-color: #cfd4d8; /* blaues Button-Design */
+            color:black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 16px;
+     
+            transition: background-color 0.3s;
+}
+
+  .menuitem:hover {
+            background-color:rgb(87, 207, 57); /* dunkler bei Hover */
+            color: white;
+        
+        
+        }
+
+        a {
+            color:black;
+        }
+
+        p{
+            padding: 10px;
+        }
+
+        h3{
+            padding: 5px;
+            margin:10px;
+        }
+
+        header p{
+            font-family: 5px;
+        }
+
+
