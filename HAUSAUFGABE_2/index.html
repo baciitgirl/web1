@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frische Wiesen Ökologischer Bauernhof</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frische Wiesen Ökologischer Bauernhof</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header mit Titel -->
+    <header>
+      <h1>Frische Wiesen Ökologischer Bauernhof</h1>
+    </header>
 
-  <!-- Header mit Titel -->
-  <header>
-    <h1>Frische Wiesen Ökologischer Bauernhof</h1>
-  </header>
+    <!-- Hero-Bereich mit großem Bild -->
+    <section class="hero">
+      <h2 class="hero-title">Das beste ökologische Bauernhof in Berlin</h2>
+    </section>
 
-  <!-- Hero-Bereich mit großem Bild -->
-  <section class="hero">
-    <h2 class="hero-title">Das beste ökologische Bauernhof in Berlin</h2>
-  </section>
+    <!-- Hauptinhalt: Navigation & Content nebeneinander -->
+    <section class="content">
+      <!-- Navigation -->
+      <!-- Navigation ohne Burger Button -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Startseite</a></li>
+          <li><a href="#">Produkte</a></li>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
 
-  <!-- Hauptinhalt: Navigation & Content nebeneinander -->
-  <section class="content">
+      <!-- Hauptbereich -->
+      <main>
+        <!-- Über Uns -->
+        <article id="about">
+          <h2>Über Unseren Bauernhof</h2>
+          <p>
+            Seit 1992 bieten wir biologische und regionale Produkte direkt vom
+            Feld an. Unsere Philosophie: Qualität, Nachhaltigkeit und Nähe zur
+            Natur.
+          </p>
+          <p>
+            Unsere Tiere leben artgerecht und unsere Felder werden ohne
+            chemische Mittel bewirtschaftet. So entsteht Qualität, die man
+            schmeckt.
+          </p>
+          <p>Kommen Sie vorbei oder bestellen Sie bequem online!</p>
+        </article>
 
-    <!-- Navigation -->
- <!-- Navigation + Burger Button -->
-<nav>
-  <button class="burger" aria-label="Menü öffnen">&#9776;</button>
-  <ul class="nav-links">
-    <li><a href="#">Startseite</a></li>
-    <li><a href="#">Produkte</a></li>
-    <li><a href="#">Über uns</a></li>
-    <li><a href="#">Kontakt</a></li>
-  </ul>
-</nav>
+        <!-- Produkte -->
+        <h2>Unsere Produkte</h2>
+        <section class="products">
+          <div class="product-item">
+            <img src="images/apples.jpg" alt="Äpfel" />
+            <h3>Äpfel</h3>
+            <p>Knackig und süß, direkt vom Baum.</p>
+          </div>
 
+          <div class="product-item">
+            <img src="images/oranges.jpg" alt="Orangen" />
+            <h3>Orangen</h3>
+            <p>Saftig und voller Vitamin C – perfekt für den Winter.</p>
+          </div>
 
-    <!-- Hauptbereich -->
-    <main>
+          <div class="product-item">
+            <img src="images/tomatoes.jpg" alt="Tomaten" />
+            <h3>Tomaten</h3>
+            <p>Reif und aromatisch – ideal für Salate oder Saucen.</p>
+          </div>
+        </section>
+      </main>
+    </section>
 
-      <!-- Über Uns -->
-      <article id="about">
-        <h2>Über Unseren Bauernhof</h2>
-        <p>Seit 1992 bieten wir biologische und regionale Produkte direkt vom Feld an. Unsere Philosophie: Qualität, Nachhaltigkeit und Nähe zur Natur.</p>
-        <p>Unsere Tiere leben artgerecht und unsere Felder werden ohne chemische Mittel bewirtschaftet. So entsteht Qualität, die man schmeckt.</p>
-        <p>Kommen Sie vorbei oder bestellen Sie bequem online!</p>
-      </article>
+    <!-- Footer mit Links -->
+    <footer>
+      <p class="footer-links">
+        <a href="#">AGB</a>
+        <a href="#">Impressum</a>
+      </p>
 
-      <!-- Produkte -->
-      <h2>Unsere Produkte</h2>
-      <section class="products">
+      <p class="footer-contact">
+        <span class="footer-text">Kontaktieren Sie uns unter </span>
+        <a href="mailto:info@bauernhof-berlin.de">info@bauernhof-berlin.de</a>
+      </p>
+    </footer>
 
-        <div class="product-item">
-          <img src="images/apples.jpg" alt="Äpfel" />
-          <h3>Äpfel</h3>
-          <p>Knackig und süß, direkt vom Baum.</p>
-        </div>
-
-        <div class="product-item">
-          <img src="images/oranges.jpg" alt="Orangen" />
-          <h3>Orangen</h3>
-          <p>Saftig und voller Vitamin C – perfekt für den Winter.</p>
-        </div>
-
-        <div class="product-item">
-          <img src="images/tomatoes.jpg" alt="Tomaten" />
-          <h3>Tomaten</h3>
-          <p>Reif und aromatisch – ideal für Salate oder Saucen.</p>
-        </div>
-
-      </section>
-
-    </main>
-  </section>
-
-  <!-- Footer mit Links -->
-  <footer>
-    <p><a href="#">AGB</a> | <a href="#">Impressum</a></p>
-    <p>Kontakt: <a href="mailto:info@bauernhof-berlin.de">info@bauernhof-berlin.de</a></p>
-  </footer>
-
-  <script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

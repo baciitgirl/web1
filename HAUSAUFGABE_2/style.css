@@ -102,6 +102,8 @@ nav a:hover {
   color: var(--primary-dark);
 }
 
+
+
 /* Hauptinhalt */
 /* Aufgabe 1: Verwendung des semantischen <main> */
 /* Aufgabe 2: Flexbox-Anteil in Kombination mit nav */
@@ -153,25 +155,50 @@ main h2 {
   font-size: 0.95rem;
 }
 
-/* Footer */
-/* Aufgabe 1: Verwendung des semantischen <footer> */
+/* Footer mit Hintergrundfarbe laut Designvorgabe */
 footer {
-  background-color: var(--primary-light);
+  background-color: var(--primary);
   text-align: center;
   padding: 1rem;
-  color: var(--text-dark);
+  color: var(--text-light);
   margin-top: 2rem;
 }
 
-footer a {
-  color: inherit;
+/* Footer-Links (AGB, Impressum) untereinander mit weißer Schrift */
+/* Aufgabe 3: Farbe und Hover-Effekt */
+.footer-links a {
+  display: block;
+  color: var(--text-light);
   text-decoration: none;
-  margin: 0 0.5rem;
+  padding: 0.3rem 0;
 }
 
-footer a:hover {
-  text-decoration: underline;
+/* Hover-Effekt wie bei Navigation */
+.footer-links a:hover {
+  background-color: var(--primary-light);
+  color: var(--text-light);
 }
+
+
+/* Kontaktzeile im Footer */
+.footer-contact {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* Weißer Text für normalen Satzteil */
+.footer-contact .footer-text {
+  color: var(--text-dark);
+}
+
+/* Schwarze, unauffällige Darstellung für Mail-Adresse */
+.footer-contact a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+
 
 /* Responsive Design mit Media Query */
 /* Aufgabe 2: Umstellung des Layouts mit Flexbox bei kleinen Bildschirmen */
