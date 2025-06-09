@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Produktliste</h1>
+    <input type="text" id="searchInput" placeholder="" Suche.... />
+    <ul id="productList"></ul>
+    <divid="container" ></div>
+
+
+<div class="container">
+ <h1>Produktkatalog</h1>
+
+ <div class="search-box">
+ <input type="text" id="searchInput" placeholder="Produkt suchen...">
+ <button id="loadButton">Produkte laden</button>
+ </div>
+
+ <div id="loading" style="display: none;">Lade Produkte...</div>
+
+ <div id="errorMessage" style="display: none; color: red;"></div>
+
+ <div class="products" id="productContainer"></div>
+</div>
+
+
+
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

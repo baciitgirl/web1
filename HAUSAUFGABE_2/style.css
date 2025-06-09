@@ -1,0 +1,203 @@
+/* CSS RESET: Einheitliche Ausgangsbasis in allen Browsern */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basis-Stil für das gesamte Dokument */
+/* Aufgabe 3: Verwendung von rem für responsive Einheiten */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+/* Farbvariablen für das gesamte Design */
+:root {
+  --primary: #507c3a;
+  --primary-dark: #2d5016;
+  --primary-light: #a8dba8;
+  --background-light: #ffffff;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+}
+
+/* Header-Bereich */
+/* Aufgabe 1: Verwendung des semantischen Tags <header> */
+/* Aufgabe 3: Verwendung von rem für padding */
+header {
+  background-color: var(--primary);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+/* Hero-Bereich mit Hintergrundbild */
+/* Aufgabe 1: Verwendung von <section> für semantische Struktur */
+/* Aufgabe 2: Layout mit Flexbox */
+/* Aufgabe 3: Verwendung von rem für padding */
+.hero {
+  background-image: url("images/hero_fullsize.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 1rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: var(--text-light);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Haupt-Layout-Bereich für Navigation und Inhalt */
+/* Aufgabe 1: Struktur mit <section class="content">, <nav>, <main> */
+/* Aufgabe 2: Flexbox-Layout */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Navigation */
+/* Aufgabe 1: Verwendung des semantischen <nav> */
+/* Aufgabe 2: Flexbox-Eigenschaften */
+/* Aufgabe 3: Einsatz von flex-basis und min-width für responsive Layouts */
+nav {
+  background-color: var(--primary);
+  padding: 1rem;
+  flex: 0 0 200px;
+  min-width: 180px;
+  order: 1;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+/* Hauptinhalt */
+/* Aufgabe 1: Verwendung des semantischen <main> */
+/* Aufgabe 2: Flexbox-Anteil in Kombination mit nav */
+/* Aufgabe 3: Verwendung von flex-basis, min-width und padding */
+main {
+  flex: 1 1 300px;
+  min-width: 250px;
+  order: 2;
+  padding: 1rem;
+  background-color: var(--background-light);
+}
+
+main h2 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
+
+/* Produktliste */
+/* Aufgabe 2: Layout mit Flexbox im Produktbereich */
+/* Aufgabe 3: Einsatz von flex: 1 1 200px für flexible Darstellung */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-item {
+  flex: 1 1 200px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--background-light);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-item h3 {
+  color: var(--primary-dark);
+  margin: 0.5rem 0;
+}
+
+.product-item p {
+  font-size: 0.95rem;
+}
+
+/* Footer */
+/* Aufgabe 1: Verwendung des semantischen <footer> */
+footer {
+  background-color: var(--primary-light);
+  text-align: center;
+  padding: 1rem;
+  color: var(--text-dark);
+  margin-top: 2rem;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design mit Media Query */
+/* Aufgabe 2: Umstellung des Layouts mit Flexbox bei kleinen Bildschirmen */
+/* Aufgabe 3: Einsatz von Prozentwerten für flexible Breite */
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  nav,
+  main {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .hero {
+    padding: 5rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  .products {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

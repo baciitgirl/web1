@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mustermann Baumarkt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active text-white" href="#">Startseite</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Werkzeuge</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Baumaterial</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Elektro</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Garten</a></li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Produkte suchen...">
+        <button class="btn btn-outline-light" type="submit">Suchen</button>
+      </form>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero-Bereich -->
+    <div class="bg-light p-5 text-center">
+      <h1>Frühjahrsrabatt: 20% auf alle Gartengeräte!</h1>
+      <p>Jetzt mit Sonderrabatt auf das gesamte Garten-Sortiment!</p>
+      <button class="btn btn-success">Angebote entdecken</button>
+    </div>
+
+    <!-- Produktangebote -->
+    <div class="container my-5">
+      <h2 class="mb-4">Aktuelle Angebote</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="bohrmaschine.png" class="card-img-top" alt="Bohrmaschine">
+            <div class="card-body">
+              <h5 class="card-title">Akku-Bohrschrauber</h5>
+              <p class="card-text">Profi-Bohrschrauber mit 2 Akkus und Koffer</p>
+              <p>€99,99 <span class="text-decoration-line-through text-muted">€129,99</span></p>
+              <a href="#" class="btn btn-primary">In den Warenkorb</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="werkzuegkoffer.png" class="card-img-top" alt="Werkzeugkoffer">
+            <div class="card-body">
+              <h5 class="card-title">Werkzeugkoffer, 215-tlg.</h5>
+              <p class="card-text">Komplettset mit Schraubendreher, Zangen und mehr</p>
+              <p>€149,99 <span class="text-decoration-line-through text-muted">€199,99</span></p>
+              <a href="#" class="btn btn-primary">In den Warenkorb</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="rasenmaeher.png" class="card-img-top" alt="Rasenmäher">
+            <div class="card-body">
+              <h5 class="card-title">Benzin-Rasenmäher</h5>
+              <p class="card-text">Mit Radantrieb und 50L Fangkorb</p>
+              <p>€279,99 <span class="text-decoration-line-through text-muted">€349,99</span></p>
+              <a href="#" class="btn btn-primary">In den Warenkorb</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="wandfarbe.png" class="card-img-top" alt="Wandfarbe">
+            <div class="card-body">
+              <h5 class="card-title">Wandfarbe, 10L</h5>
+              <p class="card-text">Hochwertige Dispersionsfarbe, verschiedene Farbtöne</p>
+              <p>€39,99 <span class="text-decoration-line-through text-muted">€49,99</span></p>
+              <a href="#" class="btn btn-primary">In den Warenkorb</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-dark py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5>Mustermann Hardware</h5>
+          <small>&copy; 2022–2025</small>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Filialen</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Wien</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Graz</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Linz</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Salzburg</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Service</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Beratung</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Werkzeugverleih</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Gerätewartung</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Holzzuschnitt</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Über uns</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Team</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Geschichte</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Karriere</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

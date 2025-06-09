@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mustermann Baumarkt</title>
+    <!-- Bootstrap CSS einbinden -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- 
+  Bootstrap-Klassen zur Steuerung des Abstands und Layouts:
+  - me-auto: Automatischer rechter Rand (margin-end), schiebt folgende Elemente nach rechts.
+  - mb-2: Unterer Rand (margin-bottom) für kleine Bildschirme, sorgt für Abstand nach unten.
+  - mb-lg-0: Kein unterer Rand ab "large"-Bildschirmgröße (≥ 992px), verhindert unnötigen Abstand bei großen Layouts.
+-->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- 
+  Ein Listenelement (li) mit der Bootstrap-Klasse "nav-item":
+  - Kennzeichnet dieses Element als Navigationseintrag innerhalb der Navbar.
+  - Wird normalerweise zusammen mit <a class="nav-link"> verwendet, um einen klickbaren Menüpunkt darzustellen.
+-->
+
+                <!-- Links muss weiß sein -->
+                <li class="nav-item"><a class="nav-link active text-white" href="#">Startseite</a></li>
+                <li class="nav-item"></li>><a class="nav-link text-white" href="#">Werkzeuge</a></li>
+                <li class="nav-item"></li>><a class="nav-link text-white" href="#">Baumaterial</a></li>
+                <li class="nav-item"></li>><a class="nav-link text-white" href="#">Elektro</a></li>
+                <li class="nav-item"></li>><a class="nav-link text-white" href="#">Garten</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Produkte suchen...">
+                
+                <!-- - btn-outline-light: Heller Rahmen (statt vollflächiger Farbe), geeignet für dunkle Hintergründe. -->
+  <!-- Der Button wirkt transparent mit weißem Rand und weißem Text – z. B. für eine Navbar mit dunklem Hintergrund. -->
+                
+                <button class="btn btn-outline-light" type="submit">Suchen</button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero-Bereich -->
+        <div>
+            <div class="bg-rabatt">
+                <h1>Frühjahrsrabatt: 20% auf alle Gartengeräte!</h1>
+                <p>
+                    Bereiten Sie Ihren Garten auf den Frühling vor mit hochwertigen Werkzeugen
+                    und Geräten von Mustermann Hardware. Jetzt mit Sonderrabatt auf das gesamte Garten-Sortiment.
+                </p>
+                <button>Angebote entdecken</button>
+            </div>
+        </div>
+        <div class="container mt-5 pt-5">
+            <div class="p-5 mb-4 bg-rabatt rounded-3">
+            </div>
+            </div>
+
+          
+             <div class="container my-4">
+            <h2 class="mb-4">Aktuelle Angebote</h2>
+          
+            <div class ="row">
+                  <div class ="col-md-3 mb-4">
+                <div class="card">
+                    <img src="bohrmaschine.png" alt="Bohrmaschine">
+                    <div class="card-body">
+                        <h5 class="card-title">Akku-Bohrschrauber</h5>
+                        <p class ="card-text">Profi-Bohrschrauber mit 2 Akkus und Koffer</p>
+                        <p>€99,99 <span class ="text-decoration-line-throw text-muted">€129,99</span></p>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                    </div>
+                </div>
+            </div>
+                 <div class ="col-md-3 mb-4">
+                <div class="card"><div>
+                    <img src="werkzuegkoffer.png" alt="Werkzeugset">
+                    <div class="card-body">
+                        <h5 class="card-title">Werkzeugkoffer, 215-tlg.</h5>
+                        <p class ="card-text">Komplettset mit Schraubendreher, Zangen und mehr</p>
+                        <p>€149,99 <span>€199,99</span></p>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                    </div>
+                </div>
+                <div class ="col-md-3 mb-4">
+                <div class="card">
+                    <img src="rasenmaeher.png" alt="Rasenmäher">
+                    <div class="card-body">
+                        <h5 class="card-title">Benzin-Rasenmäher</h5>
+                        <p class ="card-text">Mit Radantrieb und 50L Fangkorb</p>
+                        <p>€279,99 <span>€349,99</span></p>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                    </div>
+                </div>
+                <div>
+                      <div class ="col-md-3 mb-4">
+                    <img src="wandfarbe.png" alt="Farbe">
+                    <div class="card-body">
+                        <h5 class="card-title">Wandfarbe, 10L</h5>
+                        <p class ="card-text">Hochwertige Dispersionsfarbe, verschiedene Farbtöne</p>
+                        <p>€39,99 <span>€49,99</span></p>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark py-5">  <!--py-5	Vertikaler Padding für besseren Abstand oben/unten.-->
+         <div class="container"> <!--  container	Zentriert den Inhalt und sorgt für festen Maximalbereich. -->
+            <div class="row"> <!-- Start einer Bootstrap-Zeile für das Grid-System -->
+                 <div class="col-md-3 mb-4">
+                <h5>Mustermann Hardware</h5>
+                <small>&copy; 2022-2025</small> <!-- Kleingedruckter Copyright-Hinweis -->
+            
+            </div>
+            <!-- Spalte für Firmeninfo: nimmt auf mittleren und größeren Bildschirmen 3 von 12 Spalten ein -->
+            <!-- row / col-md-3	Bootstrap Grid-System: 4 Spalten nebeneinander auf mittleren und großen Bildschirmen.
+            mb-4	Abstand nach unten für bessere Lesbarkeit auf kleinen Geräten.
+             -->
+            <div class="col-md-3 mb-4">
+                <h5>Filialen</h5>
+                <ul class="list-unstyled"> <!-- Ungeordnete Liste ohne Standard-Einrückung und ohne Aufzählungszeichen (•), ideal für Footer oder Menülisten -->
+                    <li><a href="#" class="text-dark text-decoration-none">Wien</a></li>
+                    <li><a href="#"class="text-dark text-decoration-none">Graz</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Linz</a></li>
+                    <li><a href="#"class="text-dark text-decoration-none">Salzburg</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Service</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Beratung</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Werkzeugverleih</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Gerätewartung</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Holzzuschnitt</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Über uns</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Team</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Geschichte</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Karriere</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
