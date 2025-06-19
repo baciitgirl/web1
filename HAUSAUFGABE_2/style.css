@@ -16,12 +16,12 @@ body {
 
 /* Farbvariablen für das gesamte Design */
 :root {
-  --primary: #507c3a;
-  --primary-dark: #2d5016;
-  --primary-light: #a8dba8;
-  --background-light: #ffffff;
-  --text-light: #ffffff;
-  --text-dark: #000000;
+  --primary: #507c3a;             /* Hauptfarbe (dunkles Grün) */
+  --primary-dark: #2d5016;        /* Noch dunkleres Grün für Kontraste */
+  --primary-light: #a8dba8;       /* Hellgrün – z. B. für Hover oder Akzente */
+  --background-light: #ffffff;    /* Standard-Hintergrund (weiß) */
+  --text-light: #ffffff;          /* Helle Schrift – für dunkle Hintergründe */
+  --text-dark: #000000;           /* Dunkle Schrift – für helle Hintergründe */
 }
 
 /* Header-Bereich */
@@ -32,6 +32,7 @@ header {
   color: var(--text-light);
   text-align: center;
   padding: 1rem;
+   border-bottom: 1px solid darkgrey; /* <-- das erzeugt den Streifen */
 }
 
 header h1 {
@@ -40,25 +41,33 @@ header h1 {
 
 /* Hero-Bereich mit Hintergrundbild */
 /* Aufgabe 1: Verwendung von <section> für semantische Struktur */
-/* Aufgabe 2: Layout mit Flexbox */
+/* Aufgabe 2: Layout mit Flexbox(Zentrierung) */
 /* Aufgabe 3: Verwendung von rem für padding */
 .hero {
-  background-image: url("images/hero_fullsize.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
+  background-image: url("images/hero_fullsize.jpg");   /* Großes Titelbild */
+  background-size: cover;       /* Bild wird skaliert, um Fläche auszufüllen */
+  background-position: center;  /* Fokus bleibt mittig */
+  display: flex;                /* Zentriert Inhalt horizontal + vertikal */
   justify-content: center;
   align-items: center;
-  padding: 10rem 1rem;
+  padding: 10rem 1rem;          /* Viel vertikaler Abstand für großzügigen Header */
 }
 
+
+/* .hero-title – halbtransparenter Texthintergrund */
+
 .hero-title {
-  font-size: 2.5rem;
-  color: var(--text-light);
+  font-size: 3rem; /* oder sogar größer für Desktop */
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3rem 1rem;
+
+  background-color: rgba(0, 0, 0, 0.4); /* Schwarz mit 40% Deckkraft */
+  color: white;
   padding: 2rem;
   border-radius: 1rem;
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
 }
 
 /* Haupt-Layout-Bereich für Navigation und Inhalt */
@@ -127,13 +136,13 @@ main h2 {
 .products {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;  /* Abstand zwischen Karten */
 }
 
 .product-item {
-  flex: 1 1 200px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  flex: 1 1 200px;   /* Flexibles Verhalten: min. 200px, wächst bei Platz */
+  /* border: 1px solid #e0e0e0;
+  border-radius: 8px; */
   padding: 1rem;
   text-align: center;
   background-color: var(--background-light);
@@ -205,13 +214,18 @@ footer {
 /* Aufgabe 3: Einsatz von Prozentwerten für flexible Breite */
 @media (max-width: 600px) {
   .content {
-    flex-direction: column;
+    flex-direction: column; /* Navigation und Main untereinander */
   }
 
   nav,
   main {
     min-width: 0;
     width: 100%;
+  }
+
+   nav ul {
+    align-items: center;
+    gap: 1rem;
   }
 
   .hero {
@@ -224,7 +238,14 @@ footer {
   }
 
   .products {
-    flex-direction: column;
+    flex-direction: column; /* Karten untereinander stapeln */
     gap: 1.5rem;
   }
+
+  header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+
 }
